@@ -234,6 +234,11 @@ body {
     max-width: 394px;
     max-height: 330px;
     margin-bottom: 24px;
+    transition: transform 0.25s;
+}
+
+.main-gallery__img:hover {
+    transform: translateY(-10px);
 }
 
 .main-gallery__subtitle {
