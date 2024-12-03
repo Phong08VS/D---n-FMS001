@@ -335,6 +335,8 @@ body {
     border: none;
     cursor: pointer;
     margin-top: 12px;
+    font-weight: 600;
+    line-height: 2;
 }
 
 .footer-contact__form input[type="submit"]:hover {
