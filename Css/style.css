@@ -220,6 +220,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
+    align-items: center;
     row-gap: 24px;
 }
 
@@ -239,3 +240,43 @@ body {
     font-size: 1.7rem;
     line-height: 1.58;
 }
+
+/* =================================== Main-Testimonial =================================== */
+.main-testimonial__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+    margin: 0px 20px;
+    padding-bottom: 42px;
+}
+
+.main-testimonial__title {
+    text-align: center;
+    margin: 42px 0px;
+}
+
+.main-testimonial__card {
+    background-color: #f3f3f3;
+    display: inline-block;
+}
+
+.main-testimonial__desc {
+    width: 310px;
+    margin: 42px 42px 68px 42px;
+}
+
+.main-testimonial__client {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
+    margin: 0px 42px 42px 42px;
+}
+
+.main-testimonial__evaluate-img {
+    margin-bottom: 11px;
+    object-fit: cover;
+}
+
+/* =================================== Footer =================================== */
