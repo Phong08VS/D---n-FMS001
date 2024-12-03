@@ -31,6 +31,10 @@ button {
     background-color: #fff;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     color: var(--font-color);
     line-height: var(--font-line-height);
@@ -248,7 +252,7 @@ body {
     grid-template-rows: repeat(2, 1fr);
     gap: 24px;
     margin: 0px 20px;
-    padding-bottom: 42px;
+    padding-bottom: 72px;
 }
 
 .main-testimonial__title {
@@ -278,5 +282,61 @@ body {
     margin-bottom: 11px;
     object-fit: cover;
 }
-
 /* =================================== Footer =================================== */
+.footer-contact__content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 86px;
+}
+
+.footer-contact__title {
+    margin: 0px 20px 24px 20px;
+    padding-top: 10px;
+}
+
+.footer-contact__desc {
+    width: 570px;
+    margin-left: 24px;
+    margin-bottom: 42px;
+}
+
+.footer-contact__social-links {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-right: 24px;
+}
+
+.footer-contact__form input:not([type="submit"]) {
+    width: 520px;
+    height: 29px;
+    padding: 24px 16px;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.footer-contact__form input::placeholder {
+    color: var(--font-color);
+}
+
+.footer-contact__form input[type="submit"] {
+    background-color: var(--font-color);
+    color: #fff;
+    width: 199px;
+    height: 78px;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.footer-contact__form input[type="submit"]:hover {
+    opacity: 0.9;
+}
