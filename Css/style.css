@@ -86,13 +86,6 @@ body {
 }
 
 /* Header */
-.header {
-    height: 100vh;
-}
-
-.header-container {
-    height: 100%;
-}
 
 /* =================================== Header-Top =================================== */
 .header-nav {

@@ -35,6 +35,9 @@
     <!-- Nhúng tệp css -->
     <link rel="stylesheet" href="./Css/style.css">
     <title>Dự án figma tự làm số 01</title>
+
+    <!-- Nhúng responsive -->
+    <link rel="stylesheet" href="./Css/Responsive.css">
 </head>
 
 <body>
@@ -43,7 +46,7 @@
             <div class="header-top">
                 <nav class="header-nav">
                     <img src="./Img/Logo/Logo.svg" alt="Logo" class="header-nav__logo">
-                    <div class="header-nav__menu">
+                    <div class="header-nav__menu" id="header-nav__menu--pc">
                         <ul class="header-nav__menu-list">
                             <li class="header-nav__menu-item">About</li>
                             <li class="header-nav__menu-item">Work</li>
@@ -51,6 +54,30 @@
                         </ul>
                     </div>
                 </nav>
+
+                <!-- Responsive header-nav__menu for tablet and mobile -->
+                <div class="mobile-tablet-header__menu">
+                    <input type="checkbox" name="menu-checkbox" id="menu-checkbox" hidden>
+                    <label for="menu-checkbox" class="menu-checkbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="menu-checkbox__img">
+                            <path fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                        </svg>
+                    </label>
+
+                    <label for="menu-checkbox" class="menu-checkbox__overlay"></label>
+
+                    <div class="menu-drawer">
+                        <div id="header-nav__menu--mobile"></div>
+                        <script>
+                            const navPC = document.querySelector("#header-nav__menu--pc");
+                            const navMobile = document.querySelector("#header-nav__menu--mobile");
+
+                            navMobile.innerHTML =  navPC.innerHTML;
+                        </script>
+                    </div>
+                </div>
+
             </div>
 
             <div class="header-content">
@@ -259,7 +286,8 @@
                 <h2 class="footer-contact__title title-lv2">Lets work together</h2>
                 <div class="footer-contact__content">
                     <div class="footer-contact__info">
-                        <p class="footer-contact__desc">This is a template Figma file, turned into code using Anima. Learn more
+                        <p class="footer-contact__desc">This is a template Figma file, turned into code using Anima.
+                            Learn more
                             at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at
                             AnimaApp.com</p>
                         <div class="footer-contact__social-links">
@@ -280,7 +308,7 @@
                             </a>
                         </div>
                     </div>
-    
+
                     <form class="footer-contact__form">
                         <input type="text" name="name" id="name" placeholder="Name" required>
                         <input type="email" name="email" id="email" placeholder="Email" required>
