@@ -67,17 +67,65 @@
         opacity: 0.9;
         background-color: #7c7777;
     }
+
+    .main-skill {
+        grid-template-columns: 1fr;
+    }
     
+    .main-gallery__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .main-gallery__card--responsive {
+        display: none;
+    }
+
+    .main-testimonial__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .main-testimonial__card--responsive {
+        display: none;
+    }
+
+    .main-testimonial__desc {
+        margin: 42px auto 68px;
+    }
+
+    .footer-contact__content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-contact__form {
+        margin-left: 20px;
+    }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {}
 
-@media (max-width: 767.98px) {}
+/* Mobile */
+@media (max-width: 767.98px) {
+    .header-content {
+        flex-direction: column;
+    }
 
-.header-logo-bar,
-.header-content,
-main,
-footer {
-    display: none;
+    .header-logo-bar {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 25px;
+    }
+
+    .main-gallery__img {
+        max-width: 350px;
+    }
+
+    .footer-contact__desc {
+        width: 400px;
+    }
+
+    .footer-contact__form input:not([type="submit"]) {
+        width: 360px;
+    }
 }
