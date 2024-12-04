@@ -32,6 +32,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- Thư viện AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Nhúng tệp css -->
     <link rel="stylesheet" href="./Css/style.css">
     <title>Dự án figma tự làm số 01</title>
@@ -73,7 +76,7 @@
                             const navPC = document.querySelector("#header-nav__menu--pc");
                             const navMobile = document.querySelector("#header-nav__menu--mobile");
 
-                            navMobile.innerHTML =  navPC.innerHTML;
+                            navMobile.innerHTML = navPC.innerHTML;
                         </script>
                     </div>
                 </div>
@@ -90,7 +93,8 @@
                     <button class="header-content__btn cta">Contact</button>
                 </section>
                 <figure class="header-content__right">
-                    <img src="./Img/BG/HeaderImage 1.svg" alt="HeaderImage" class="header-content__img">
+                    <img src="./Img/BG/HeaderImage 1.svg" alt="HeaderImage" class="header-content__img"
+                        data-aos="zoom-out-left">
                 </figure>
             </div>
 
@@ -134,7 +138,8 @@
             </div>
 
             <section class="main-gallery">
-                <h2 class="main-gallery__title title-lv2">Latest work</h2>
+                <h2 class="main-gallery__title title-lv2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="50">
+                    Latest work</h2>
                 <div class="main-gallery__cards">
                     <figure class="main-gallery__card">
                         <img src="./Img/BG/Gallery-img1.svg" alt="Project title" class="main-gallery__img">
@@ -178,7 +183,8 @@
             </section>
 
             <section class="main-testimonial">
-                <h2 class="main-testimonial__title title-lv2">Testimonial</h2>
+                <h2 class="main-testimonial__title title-lv2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="50">
+                    Testimonial</h2>
                 <div class="main-testimonial__cards">
                     <article class="main-testimonial__card">
                         <p class="main-testimonial__desc subtitle">This is a template Figma file, turned into code using
@@ -318,6 +324,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
